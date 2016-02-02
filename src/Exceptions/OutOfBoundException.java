@@ -1,17 +1,14 @@
 package Exceptions;
 
-public class OutOfBoundException extends Exception {
+public class OutOfBoundException extends Exception
+{
+    private static final long serialVersionUID = 1L;
 
-	private static final long serialVersionUID = 1L;
+    public OutOfBoundException()
+    {}
 
-	public OutOfBoundException() {
-		
-	}
-
-	public OutOfBoundException(String arg0) {
-		
-		super(arg0);
-		
-	}
-
+    public OutOfBoundException(String arg0)
+    {
+        super(arg0);
+    }
 }
