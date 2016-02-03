@@ -6,7 +6,7 @@ import Exceptions.EmptyHeapException;
 import Exceptions.OutOfBoundException;
 import Sort.SortArray;
 
-
+@Deprecated
 public class TestSort
 {
     public static void main(String[] args) throws EmptyArrayException, EmptyHeapException

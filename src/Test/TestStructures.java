@@ -8,7 +8,7 @@ import DataStructures.Stack;
 import Exceptions.EmptyArrayException;
 import Exceptions.EmptyHeapException;
 
-
+@Deprecated
 public class TestStructures
 {
     public static void main(String[] args) throws EmptyArrayException, EmptyHeapException

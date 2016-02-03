@@ -11,6 +11,7 @@ import java.util.ArrayList;
  * @author sapo93
  *
  */
+@Deprecated
 public class ParallelRandInt extends SecureRandom implements Runnable
 {
     private static final long serialVersionUID = 1L;
@@ -99,7 +100,7 @@ public class ParallelRandInt extends SecureRandom implements Runnable
     /** 
      * Runnable Method For Thread Execution
      */
-    @Override
+    //@Override
     public void run()
     {
         this.IntegerRandGen(this.seqPerThread, this.range);
