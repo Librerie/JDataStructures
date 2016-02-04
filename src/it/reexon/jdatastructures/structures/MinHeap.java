@@ -1,5 +1,7 @@
 package it.reexon.jdatastructures.structures;
 
+import it.reexon.jdatastructures.exceptions.EmptyHeapException;
+
 public class MinHeap<T extends Comparable<T>> extends Heap<T>
 {
 
@@ -58,4 +60,25 @@ public class MinHeap<T extends Comparable<T>> extends Heap<T>
     {
         return String.format("MaxHeap []");
     }
-}
+
+    public T extractMinValue() throws EmptyHeapException
+    {
+        if (this.heapArrList.size() == 0)
+        {
+            throw new EmptyHeapException("Heap Is Empty");
+        }
+        T minValue = this.heapArrList.get(0);
+        T lastValue = this.heapArrList.get(this.heapSize);
+        this.heapArrList.set(0, lastValue);
+        this.heapArrList.remove(this.heapSize);
+        this.heapSize = this.heapSize - 1;
+        this.minHeapify(0);
+        return minValue;
+    }
+
+    public void insert(T value)
+    {
+        this.heapArrList.add(value);
+        this.heapSize++;
+        this.buildHeap();
+    }}

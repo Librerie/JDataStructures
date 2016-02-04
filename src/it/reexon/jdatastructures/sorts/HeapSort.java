@@ -1,9 +1,12 @@
-package Sort;
+package it.reexon.jdatastructures.sorts;
 
-import DataStructures.MinHeap;
-import Exceptions.EmptyHeapException;
+import it.reexon.jdatastructures.exceptions.EmptyHeapException;
+import it.reexon.jdatastructures.structures.MinHeap;
 
-@Deprecated
+/**
+ * @author Saporito Francesco
+ * @param <T>
+ */
 public class HeapSort<T extends Comparable<T>>
 {
     private T[] arraySort;

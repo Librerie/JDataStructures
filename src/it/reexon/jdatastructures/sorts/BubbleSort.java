@@ -1,8 +1,11 @@
-package Sort;
+package it.reexon.jdatastructures.sorts;
 
-import Exceptions.OutOfBoundException;
+import it.reexon.jdatastructures.exceptions.OutOfBoundException;
 
-@Deprecated
+/**
+ * @author Saporito Francesco
+ * @param <T>
+ */
 public class BubbleSort<T extends Comparable<T>>
 {
     private T[] arraySort;
