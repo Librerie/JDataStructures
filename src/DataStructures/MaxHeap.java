@@ -2,9 +2,10 @@ package DataStructures;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+
 import Exceptions.EmptyHeapException;
 
-
+@Deprecated
 public class MaxHeap<T extends Comparable<T>>
 {
     private ArrayList<T> heapArrList;
