@@ -7,8 +7,9 @@ import DataStructures.Queue;
 import DataStructures.Stack;
 import Exceptions.EmptyArrayException;
 import Exceptions.EmptyHeapException;
+import it.reexon.jdatastructures.ParallelRandInt;
 
-
+@Deprecated
 public class TestStructures
 {
     public static void main(String[] args) throws EmptyArrayException, EmptyHeapException

@@ -1,5 +1,9 @@
-package Sort;
-@Deprecated
+package it.reexon.jdatastructures.sorts;
+
+/**
+ * @author Saporito Francesco
+ * @param <T>
+ */
 public class ShellSort<T extends Comparable<T>>
 {
     private T[] arraySort;

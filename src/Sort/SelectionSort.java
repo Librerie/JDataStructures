@@ -2,7 +2,7 @@ package Sort;
 
 import Exceptions.OutOfBoundException;
 
-
+@Deprecated
 public class SelectionSort<T extends Comparable<T>>
 {
     private T[] arraySort;

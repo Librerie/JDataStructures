@@ -1,20 +1,20 @@
-package DataStructures;
+package it.reexon.jdatastructures.structures;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-@Deprecated
+
 public class Stack<T>
 {
-    private ArrayList<T> Stack;
+    private ArrayList<T> stack;
 
     /**
      * Constructor With An ArrayList As Parameter
-     * @param S ArrayList To Use As Stack
+     * @param S ArrayList To Use As stack
      */
     public Stack(ArrayList<T> S)
     {
-        this.Stack = new ArrayList<T>();
+        this.stack = new ArrayList<T>();
         for (int i = 0; i < S.size(); i++)
         {
             this.pushStack(S.get(i));
@@ -23,11 +23,11 @@ public class Stack<T>
 
     /**
      * Constructor With An Array As Parameter
-     * @param S Array To Use As Stack
+     * @param S Array To Use As stack
      */
     public Stack(T[] S)
     {
-        this.Stack = new ArrayList<T>();
+        this.stack = new ArrayList<T>();
         for (int i = 0; i < S.length; i++)
         {
             this.pushStack(S[i]);
@@ -35,7 +35,7 @@ public class Stack<T>
     }
 
     /**
-     * Constructor That Create A New ArrayList To Be Used As Stack
+     * Constructor That Create A New ArrayList To Be Used As stack
      */
     public Stack()
     {
@@ -43,26 +43,26 @@ public class Stack<T>
     }
 
     /**
-     * Add An Item To The Stack (Inserted At Top Level)
-     * @param element Element To Add To The Stack
+     * Add An Item To The stack (Inserted At Top Level)
+     * @param element Element To Add To The stack
      */
     public void pushStack(T element)
     {
-        if (this.Stack != null)
+        if (this.stack != null)
         {
-            this.Stack.add(this.Stack.size(), element);
+            this.stack.add(this.stack.size(), element);
         }
     }
 
     /**
-     * Remove The First Element Of The Stack
+     * Remove The First Element Of The stack
      * @return The Removed Item, Null If Empty
      */
     public T popStack()
     {
         if (!this.emptyStack())
         {
-            return this.Stack.remove(this.Stack.size() - 1);
+            return this.stack.remove(this.stack.size() - 1);
         }
         else
         {
@@ -71,14 +71,14 @@ public class Stack<T>
     }
 
     /**
-     * Return A Copy Of The First Item Of The Stack
+     * Return A Copy Of The First Item Of The stack
      * @return First Item, Null If Empty
      */
     public T topStack()
     {
         if (!this.emptyStack())
         {
-            return this.Stack.get(this.Stack.size());
+            return this.stack.get(this.stack.size());
         }
         else
         {
@@ -87,12 +87,12 @@ public class Stack<T>
     }
 
     /**
-     * Verify If The Stack Is Empty
-     * @return True If The Stack Is Empty, False Otherwise
+     * Verify If The stack Is Empty
+     * @return True If The stack Is Empty, False Otherwise
      */
     public boolean emptyStack()
     {
-        if (this.Stack.size() == 0)
+        if (this.stack.size() == 0)
         {
             return true;
         }
@@ -103,7 +103,7 @@ public class Stack<T>
     }
 
     /**
-     * Create An Array With The Elements Of The Stack
+     * Create An Array With The Elements Of The stack
      * @return The Array
      */
     @SuppressWarnings("unchecked")
@@ -111,41 +111,41 @@ public class Stack<T>
     {
         //T[] arr = (T[]) this.Stack.toArray();
         //(T[]) list.toArray( (T[])Array.newInstance (one.getClass(), list.size()) );
-        T[] arr = (T[]) this.Stack.toArray((T[]) Array.newInstance(this.Stack.get(0).getClass(), this.Stack.size()));
+        T[] arr = (T[]) this.stack.toArray((T[]) Array.newInstance(this.stack.get(0).getClass(), this.stack.size()));
         return arr;
     }
 
     /**
-     *  Clone The Current Stack Returning A Copy
-     *  @return A New Stack 
+     *  Clone The Current stack Returning A Copy
+     *  @return A New stack 
      */
     public ArrayList<T> clone()
     {
-        return (this.Stack);
+        return (this.stack);
     }
 
     /**
-     *  Empty The Stack
+     *  Empty The stack
      */
     public void clear()
     {
-        this.Stack.clear();
+        this.stack.clear();
     }
 
     /**
-     *  Implements The hashCode Method For A Stack
+     *  Implements The hashCode Method For A stack
      */
     @Override
     public int hashCode()
     {
         final int prime = 31;
         int result = 1;
-        result = prime * result + ((Stack == null) ? 0 : Stack.hashCode());
+        result = prime * result + ((stack == null) ? 0 : stack.hashCode());
         return result;
     }
 
     /**
-     *  Implements The equals Method For A Stack
+     *  Implements The equals Method For A stack
      */
     @Override
     public boolean equals(Object obj)
@@ -160,12 +160,12 @@ public class Stack<T>
             return false;
         @SuppressWarnings("unchecked")
         Stack<T> other = (Stack<T>) obj;
-        if (Stack == null)
+        if (stack == null)
         {
-            if (other.Stack != null)
+            if (other.stack != null)
                 return false;
         }
-        else if (!Stack.equals(other.Stack))
+        else if (!stack.equals(other.stack))
             return false;
         return true;
     }
@@ -176,6 +176,6 @@ public class Stack<T>
     @Override
     public String toString()
     {
-        return "Stack [Stack=" + Stack + "]";
+        return "stack [stack=" + stack + "]";
     }
 }

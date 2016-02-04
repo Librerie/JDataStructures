@@ -1,6 +1,9 @@
-package Sort;
+package it.reexon.jdatastructures.sorts;
 
-@Deprecated
+/**
+ * @author Saporito Francesco
+ * @param <T>
+ */
 public class MergeHybridSort<T extends Comparable<T>> extends MergeSort<T>
 {
     private T[] arraySort;

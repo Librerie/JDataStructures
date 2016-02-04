@@ -1,4 +1,4 @@
-package Test;
+package it.reexon.jdatastructures;
 
 import java.lang.reflect.Array;
 import java.security.SecureRandom;
@@ -99,7 +99,7 @@ public class ParallelRandInt extends SecureRandom implements Runnable
     /** 
      * Runnable Method For Thread Execution
      */
-    @Override
+    //@Override
     public void run()
     {
         this.IntegerRandGen(this.seqPerThread, this.range);

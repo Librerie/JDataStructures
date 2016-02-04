@@ -5,8 +5,9 @@ import Exceptions.EmptyArrayException;
 import Exceptions.EmptyHeapException;
 import Exceptions.OutOfBoundException;
 import Sort.SortArray;
+import it.reexon.jdatastructures.ParallelRandInt;
 
-
+@Deprecated
 public class TestSort
 {
     public static void main(String[] args) throws EmptyArrayException, EmptyHeapException

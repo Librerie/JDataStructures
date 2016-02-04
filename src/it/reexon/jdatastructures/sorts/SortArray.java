@@ -1,11 +1,15 @@
-package Sort;
+package it.reexon.jdatastructures.sorts;
 
 import java.util.ArrayList;
-import Exceptions.EmptyArrayException;
-import Exceptions.EmptyHeapException;
-import Exceptions.OutOfBoundException;
 
-@Deprecated
+import it.reexon.jdatastructures.exceptions.EmptyArrayException;
+import it.reexon.jdatastructures.exceptions.EmptyHeapException;
+import it.reexon.jdatastructures.exceptions.OutOfBoundException;
+
+/**
+ * @author Saporito Francesco
+ * @param <T>
+ */
 public class SortArray<T extends Comparable<T>>
 {
     private T[] arraySort;

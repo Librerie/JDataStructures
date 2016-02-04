@@ -1,6 +1,9 @@
-package DataStructures;
+package it.reexon.jdatastructures.structures;
 
-@Deprecated
+/**
+ * @author Saporito Francesco
+ * @param <T>
+ */
 public class Tree<T extends Comparable<T>>
 {
     protected Tree<T> left;

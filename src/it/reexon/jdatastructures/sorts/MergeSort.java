@@ -1,8 +1,11 @@
-package Sort;
+package it.reexon.jdatastructures.sorts;
 
 import java.lang.reflect.Array;
 
-@Deprecated
+/**
+ * @author Saporito Francesco
+ * @param <T>
+ */
 public class MergeSort<T extends Comparable<T>>
 {
     private T[] arraySort;
