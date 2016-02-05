@@ -8,6 +8,8 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 
+import it.reexon.jdatastructures.ParallelRandInt;
+
 
 /**
  * @author marco.velluto
@@ -16,21 +18,23 @@ import org.junit.BeforeClass;
 public abstract class GeneralTest
 {
     protected final int seed = 1111;
-    protected final int lenght = 100000;
+    protected final int lenght = 1000;
     protected final int range = 100;
+
+    protected ParallelRandInt rand = new ParallelRandInt(this.seed, this.lenght, this.range);
 
     /**
      * @throws java.lang.Exception
      */
     @BeforeClass
-    public void setUpBeforeClass() throws Exception
+    public static void setUpBeforeClass() throws Exception
     {}
 
     /**
      * @throws java.lang.Exception
      */
     @AfterClass
-    public void tearDownAfterClass() throws Exception
+    public static void tearDownAfterClass() throws Exception
     {}
 
     /**
@@ -46,4 +50,48 @@ public abstract class GeneralTest
     @After
     public void tearDown() throws Exception
     {}
+
+    /**
+     * 
+     * @param startTime
+     * @param endTime
+     * @return
+     */
+    public long durationNanoTime(long startTime, long endTime)
+    {
+        return endTime - startTime;
+    }
+
+    /**
+     * 
+     * @param startTime
+     * @return
+     */
+    public long durationNanoTime(long startTime)
+    {
+        long endTime = System.nanoTime();
+        return endTime - startTime;
+    }
+
+    /**
+     * 
+     * @param startTime
+     * @param endTime
+     * @return
+     */
+    public long durationMilliseconds(long startTime, long endTime)
+    {
+        return this.durationNanoTime(startTime, endTime) / 1000000;
+    }
+
+    /**
+     * 
+     * @param startTime
+     * @return
+     */
+    public long durationMilliseconds(long startTime)
+    {
+        return this.durationNanoTime(startTime, System.nanoTime()) / 1000000;
+    }
+
 }

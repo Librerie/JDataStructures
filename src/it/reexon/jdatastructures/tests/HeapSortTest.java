@@ -11,6 +11,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+
 /**
  * @author marco.velluto
  *
@@ -22,19 +23,15 @@ public class HeapSortTest extends GeneralTest
      * @see it.reexon.jdatastructures.tests.GeneralTest#setUpBeforeClass()
      */
     @BeforeClass
-    public void setUpBeforeClass() throws Exception
-    {
-        super.setUpBeforeClass();
-    }
+    public static void setUpBeforeClass() throws Exception
+    {}
 
     /* (non-Javadoc)
      * @see it.reexon.jdatastructures.tests.GeneralTest#tearDownAfterClass()
      */
     @AfterClass
-    public void tearDownAfterClass() throws Exception
-    {
-        super.tearDownAfterClass();
-    }
+    public static void tearDownAfterClass() throws Exception
+    {}
 
     /* (non-Javadoc)
      * @see it.reexon.jdatastructures.tests.GeneralTest#setUp()

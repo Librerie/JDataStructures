@@ -14,7 +14,6 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import it.reexon.jdatastructures.ParallelRandInt;
 import it.reexon.jdatastructures.exceptions.EmptyArrayException;
 import it.reexon.jdatastructures.exceptions.OutOfBoundException;
 import it.reexon.jdatastructures.sorts.SortArray;
@@ -32,14 +31,14 @@ public class BubbleSortTest extends GeneralTest
      * @throws java.lang.Exception
      */
     @BeforeClass
-    public void setUpBeforeClass() throws Exception
+    public static void setUpBeforeClass() throws Exception
     {}
 
     /**
      * @throws java.lang.Exception
      */
     @AfterClass
-    public void tearDownAfterClass() throws Exception
+    public static void tearDownAfterClass() throws Exception
     {}
 
     /**
@@ -62,11 +61,13 @@ public class BubbleSortTest extends GeneralTest
     @Test
     public final void testBubbleSort()
     {
-        ParallelRandInt rand = new ParallelRandInt(super.seed, super.lenght, super.range);
-        Integer[] arr = rand.getRandIntArr();
+        long startTime = System.nanoTime();
+
+        Integer[] arr = super.rand.getRandIntArr();
         Boolean isSorted = false;
         try
         {
+
             SortArray<Integer> sort = new SortArray<Integer>(arr.clone());
             sort = new SortArray<Integer>(arr.clone());
             logger.debug("*** BubbleSort ");
@@ -84,5 +85,8 @@ public class BubbleSortTest extends GeneralTest
             fail("Error: " + e);
         }
         assertTrue(isSorted);
+
+        long duration = super.durationMilliseconds(startTime);
+        System.out.println("*** BubbleSort - passed: " + isSorted + " time: " + duration + " ms");
     }
 }

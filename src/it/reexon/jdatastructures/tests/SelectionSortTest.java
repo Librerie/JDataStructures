@@ -20,15 +20,13 @@ public class SelectionSortTest extends GeneralTest
 {
 
     @BeforeClass
-    public void setUpBeforeClass() throws Exception
+    public static void setUpBeforeClass() throws Exception
     {
-        super.setUpBeforeClass();
     }
 
     @AfterClass
-    public void tearDownAfterClass() throws Exception
+    public static void tearDownAfterClass() throws Exception
     {
-        super.tearDownAfterClass();
     }
 
     @Before
