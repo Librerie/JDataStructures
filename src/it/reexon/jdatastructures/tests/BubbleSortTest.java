@@ -65,7 +65,8 @@ public class BubbleSortTest extends GeneralTest
         testBubbleSortDouble();
     }
 
-    private void testBubbleSortDouble()
+    @Test
+    public final void testBubbleSortDouble()
     {
         long startTime = System.nanoTime();
 
@@ -89,11 +90,12 @@ public class BubbleSortTest extends GeneralTest
         }
         assertTrue(isSorted);
 
-        long duration = super.durationSeconds(startTime);
+        long duration = super.durationMilliseconds(startTime);
         System.out.println("*** BubbleSort - passed: " + isSorted + " time: " + duration + " ms");
     }
 
-    private void testBubbleSortInteger()
+    @Test
+    public final void testBubbleSortInteger()
     {
         long startTime = System.nanoTime();
 
@@ -117,7 +119,7 @@ public class BubbleSortTest extends GeneralTest
         }
         assertTrue(isSorted);
 
-        long duration = super.durationSeconds(startTime);
+        long duration = super.durationMilliseconds(startTime);
         System.out.println("*** BubbleSort - passed: " + isSorted + " time: " + duration + " ms");
     }
 }

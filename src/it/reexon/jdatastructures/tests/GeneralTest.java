@@ -108,4 +108,13 @@ public abstract class GeneralTest
         return this.durationNanoTime(startTime, System.nanoTime()) / 1000000000;
     }
 
+    /**
+     * 
+     * @param startTime
+     * @return
+     */
+    public String messageDuration(long startTime)
+    {
+        return "" + this.durationMilliseconds(startTime) + " ms";
+    }
 }

@@ -75,7 +75,7 @@ public class SelectionSortTest extends GeneralTest
         }
         assertTrue(isSorted);
 
-        long duration = super.durationSeconds(startTime);
+        long duration = super.durationMilliseconds(startTime);
         System.out.println("*** MergeSort - passed: " + isSorted + " time: " + duration + " ms");
     }
 

@@ -75,7 +75,7 @@ public class MergeHybridSortTest extends GeneralTest
         }
         assertTrue(isSorted);
 
-        long duration = super.durationSeconds(startTime);
+        long duration = super.durationMilliseconds(startTime);
         System.out.println("*** MergeHybridSort - passed: " + isSorted + " time: " + duration + " ms");
     }
 
