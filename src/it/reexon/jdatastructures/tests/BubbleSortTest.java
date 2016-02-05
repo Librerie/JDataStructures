@@ -6,6 +6,8 @@ package it.reexon.jdatastructures.tests;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -24,19 +26,20 @@ import it.reexon.jdatastructures.sorts.SortArray;
  */
 public class BubbleSortTest extends GeneralTest
 {
+    private static final Logger logger = LogManager.getLogger(BubbleSortTest.class);
 
     /**
      * @throws java.lang.Exception
      */
     @BeforeClass
-    public static void setUpBeforeClass() throws Exception
+    public void setUpBeforeClass() throws Exception
     {}
 
     /**
      * @throws java.lang.Exception
      */
     @AfterClass
-    public static void tearDownAfterClass() throws Exception
+    public void tearDownAfterClass() throws Exception
     {}
 
     /**
@@ -54,7 +57,7 @@ public class BubbleSortTest extends GeneralTest
     {}
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.sorts.BubbleSort#BubbleSort(T[], int, int)}.
+     * test method for {@link it.reexon.jdatastructures.sorts.BubbleSort#BubbleSort(T[], int, int)}.
      */
     @Test
     public final void testBubbleSort()
@@ -65,13 +68,12 @@ public class BubbleSortTest extends GeneralTest
         try
         {
             SortArray<Integer> sort = new SortArray<Integer>(arr.clone());
-            System.out.print("\n"); //TODO: Change with Log4j
             sort = new SortArray<Integer>(arr.clone());
-            System.out.println("*** BubbleSort ");
-            System.out.println("*** Lenght = " + arr.length);
+            logger.debug("*** BubbleSort ");
+            logger.debug("*** Lenght = " + arr.length);
             sort.bubbleSort();
             isSorted = sort.isSorted();
-            System.out.println("Sorted: " + isSorted);
+            logger.debug("Sorted: " + isSorted);
         }
         catch (EmptyArrayException e)
         {
@@ -83,14 +85,4 @@ public class BubbleSortTest extends GeneralTest
         }
         assertTrue(isSorted);
     }
-
-    /**
-     * Test method for {@link it.reexon.jdatastructures.sorts.BubbleSort#getArraySort()}.
-     */
-    @Test
-    public final void testGetArraySort()
-    {
-        fail("Not yet implemented"); // TODO
-    }
-
 }
