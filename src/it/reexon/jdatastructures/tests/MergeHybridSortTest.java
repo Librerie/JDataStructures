@@ -3,7 +3,8 @@
  */
 package it.reexon.jdatastructures.tests;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -22,9 +23,9 @@ import it.reexon.jdatastructures.sorts.SortArray;
  * @author marco.velluto
  *
  */
-public class MergeSortTest extends GeneralTest
+public class MergeHybridSortTest extends GeneralTest
 {
-    private static final Logger logger = LogManager.getLogger(MergeSortTest.class);
+    private static final Logger logger = LogManager.getLogger(MergeHybridSortTest.class);
 
     @BeforeClass
     public static void setUpBeforeClass() throws Exception
@@ -47,10 +48,10 @@ public class MergeSortTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.sorts.MergeSort#MergeSort(T[], int, int)}.
+     * Test method for {@link it.reexon.jdatastructures.sorts.MergeHybridSort#MergeHybridSort(T[], int, int)}.
      */
     @Test
-    public final void testMergeSort()
+    public final void testMergeHybridSort()
     {
         long startTime = System.nanoTime();
 
@@ -58,9 +59,9 @@ public class MergeSortTest extends GeneralTest
         try
         {
             SortArray<Integer> sort = new SortArray<Integer>(super.arr.clone());
-            logger.debug("*** MergeSort ");
+            logger.debug("*** MergeHybridSort ");
             logger.debug("*** Lenght = " + super.arr.length);
-            sort.mergeSort();
+            sort.mergeHybridSort();
             isSorted = sort.isSorted();
             logger.debug("Sorted: " + isSorted);
         }
@@ -75,6 +76,7 @@ public class MergeSortTest extends GeneralTest
         assertTrue(isSorted);
 
         long duration = super.durationSeconds(startTime);
-        System.out.println("*** MergeSort - passed: " + isSorted + " time: " + duration + " ms");
+        System.out.println("*** MergeHybridSort - passed: " + isSorted + " time: " + duration + " ms");
     }
+
 }

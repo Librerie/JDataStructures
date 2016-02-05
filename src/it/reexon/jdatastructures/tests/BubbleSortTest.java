@@ -63,15 +63,12 @@ public class BubbleSortTest extends GeneralTest
     {
         long startTime = System.nanoTime();
 
-        Integer[] arr = super.rand.getRandIntArr();
         Boolean isSorted = false;
         try
         {
-
-            SortArray<Integer> sort = new SortArray<Integer>(arr.clone());
-            sort = new SortArray<Integer>(arr.clone());
+            SortArray<Integer> sort = new SortArray<Integer>(super.arr.clone());
             logger.debug("*** BubbleSort ");
-            logger.debug("*** Lenght = " + arr.length);
+            logger.debug("*** Lenght = " + super.arr.length);
             sort.bubbleSort();
             isSorted = sort.isSorted();
             logger.debug("Sorted: " + isSorted);
@@ -86,7 +83,7 @@ public class BubbleSortTest extends GeneralTest
         }
         assertTrue(isSorted);
 
-        long duration = super.durationMilliseconds(startTime);
+        long duration = super.durationSeconds(startTime);
         System.out.println("*** BubbleSort - passed: " + isSorted + " time: " + duration + " ms");
     }
 }

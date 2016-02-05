@@ -1,16 +1,24 @@
 package it.reexon.jdatastructures.tests;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import it.reexon.jdatastructures.exceptions.EmptyArrayException;
+import it.reexon.jdatastructures.exceptions.OutOfBoundException;
+import it.reexon.jdatastructures.sorts.SortArray;
+
 
 public class InsertionSort extends GeneralTest
 {
+    private static final Logger logger = LogManager.getLogger(HeapSortTest.class);
 
     @BeforeClass
     public static void setUpBeforeClass() throws Exception
@@ -35,7 +43,30 @@ public class InsertionSort extends GeneralTest
     @Test
     public final void testInsertionSort()
     {
-        fail("Not yet implemented"); // TODO
+        long startTime = System.nanoTime();
+
+        Boolean isSorted = false;
+        try
+        {
+            SortArray<Integer> sort = new SortArray<Integer>(super.arr.clone());
+            logger.debug("*** InsertionSort ");
+            logger.debug("*** Lenght = " + super.arr.length);
+            sort.insertionSort();
+            isSorted = sort.isSorted();
+            logger.debug("Sorted: " + isSorted);
+        }
+        catch (EmptyArrayException e)
+        {
+            fail("Error: " + e);
+        }
+        catch (OutOfBoundException e)
+        {
+            fail("Error: " + e);
+        }
+        assertTrue(isSorted);
+
+        long duration = super.durationSeconds(startTime);
+        System.out.println("*** InsertionSort - passed: " + isSorted + " time: " + duration + " ms");
     }
 
 }

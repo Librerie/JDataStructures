@@ -18,10 +18,11 @@ import it.reexon.jdatastructures.ParallelRandInt;
 public abstract class GeneralTest
 {
     protected final int seed = 1111;
-    protected final int lenght = 1000;
+    protected final int lenght = 100000;
     protected final int range = 100;
 
     protected ParallelRandInt rand = new ParallelRandInt(this.seed, this.lenght, this.range);
+    protected Integer[] arr = rand.getRandIntArr();
 
     /**
      * @throws java.lang.Exception
@@ -92,6 +93,16 @@ public abstract class GeneralTest
     public long durationMilliseconds(long startTime)
     {
         return this.durationNanoTime(startTime, System.nanoTime()) / 1000000;
+    }
+
+    /**
+     * 
+     * @param startTime
+     * @return
+     */
+    public long durationSeconds(long startTime)
+    {
+        return this.durationNanoTime(startTime, System.nanoTime()) / 1000000000;
     }
 
 }
