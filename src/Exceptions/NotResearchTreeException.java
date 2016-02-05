@@ -1,5 +1,6 @@
 package Exceptions;
 
+@Deprecated
 public class NotResearchTreeException extends Exception
 {
     private static final long serialVersionUID = 1L;

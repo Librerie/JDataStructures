@@ -1,12 +1,16 @@
-package Exceptions;
+package it.reexon.jdatastructures.exceptions;
 
-@Deprecated
+/**
+ * @author marco.velluto
+ */
 public class OutOfBoundException extends Exception
 {
     private static final long serialVersionUID = 1L;
 
     public OutOfBoundException()
-    {}
+    {
+        super();
+    }
 
     public OutOfBoundException(String arg0)
     {

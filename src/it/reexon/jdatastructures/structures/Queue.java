@@ -1,9 +1,12 @@
-package DataStructures;
+package it.reexon.jdatastructures.structures;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-@Deprecated
+/**
+ * @author Saporito Francesco
+ * @param <T>
+ */
 public class Queue<T>
 {
     private ArrayList<T> Queue;

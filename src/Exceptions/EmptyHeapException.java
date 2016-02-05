@@ -1,5 +1,6 @@
 package Exceptions;
 
+@Deprecated
 public class EmptyHeapException extends Exception
 {
     /**

@@ -1,8 +1,12 @@
-package DataStructures;
+package it.reexon.jdatastructures.structures;
 
-import Exceptions.NotResearchTreeException;
+import it.reexon.jdatastructures.exceptions.NotResearchTreeException;
 
-@Deprecated
+
+/**
+ * @author Saporito Francesco
+ * @param <T>
+ */
 public class ResearchTree<T extends Comparable<T>> extends Tree<T>
 {
     /** 

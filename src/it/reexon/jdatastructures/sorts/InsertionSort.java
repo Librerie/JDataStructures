@@ -1,6 +1,9 @@
-package Sort;
+package it.reexon.jdatastructures.sorts;
 
-@Deprecated
+/**
+ * @author Saporito Francesco
+ * @param <T>
+ */
 public class InsertionSort<T extends Comparable<T>>
 {
     private T[] arraySort;
