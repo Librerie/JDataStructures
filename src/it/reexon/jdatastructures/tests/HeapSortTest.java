@@ -59,9 +59,9 @@ public class HeapSortTest extends GeneralTest
         Boolean isSorted = false;
         try
         {
-            SortArray<Integer> sort = new SortArray<Integer>(super.arr.clone());
+            SortArray<Integer> sort = new SortArray<Integer>(super.arrInteger.clone());
             logger.debug("*** HeapSort ");
-            logger.debug("*** Lenght = " + super.arr.length);
+            logger.debug("*** Lenght = " + super.arrInteger.length);
             sort.heapSort();
             isSorted = sort.isSorted();
             logger.debug("Sorted: " + isSorted);

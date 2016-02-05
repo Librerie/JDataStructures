@@ -58,9 +58,9 @@ public class ShellSortTest extends GeneralTest
         Boolean isSorted = false;
         try
         {
-            SortArray<Integer> sort = new SortArray<Integer>(super.arr.clone());
+            SortArray<Integer> sort = new SortArray<Integer>(super.arrInteger.clone());
             logger.debug("*** SelectionsSort ");
-            logger.debug("*** Lenght = " + super.arr.length);
+            logger.debug("*** Lenght = " + super.arrInteger.length);
             sort.shellSort();
             isSorted = sort.isSorted();
             logger.debug("Sorted: " + isSorted);

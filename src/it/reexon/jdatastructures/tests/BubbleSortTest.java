@@ -61,14 +61,48 @@ public class BubbleSortTest extends GeneralTest
     @Test
     public final void testBubbleSort()
     {
+        testBubbleSortInteger();
+        testBubbleSortDouble();
+    }
+
+    private void testBubbleSortDouble()
+    {
         long startTime = System.nanoTime();
 
         Boolean isSorted = false;
         try
         {
-            SortArray<Integer> sort = new SortArray<Integer>(super.arr.clone());
+            SortArray<Double> sort = new SortArray<Double>(super.arrDouble.clone());
             logger.debug("*** BubbleSort ");
-            logger.debug("*** Lenght = " + super.arr.length);
+            logger.debug("*** Lenght = " + super.arrDouble.length);
+            sort.bubbleSort();
+            isSorted = sort.isSorted();
+            logger.debug("Sorted: " + isSorted);
+        }
+        catch (EmptyArrayException e)
+        {
+            fail("Error: " + e);
+        }
+        catch (OutOfBoundException e)
+        {
+            fail("Error: " + e);
+        }
+        assertTrue(isSorted);
+
+        long duration = super.durationSeconds(startTime);
+        System.out.println("*** BubbleSort - passed: " + isSorted + " time: " + duration + " ms");
+    }
+
+    private void testBubbleSortInteger()
+    {
+        long startTime = System.nanoTime();
+
+        Boolean isSorted = false;
+        try
+        {
+            SortArray<Integer> sort = new SortArray<Integer>(super.arrInteger.clone());
+            logger.debug("*** BubbleSort ");
+            logger.debug("*** Lenght = " + super.arrInteger.length);
             sort.bubbleSort();
             isSorted = sort.isSorted();
             logger.debug("Sorted: " + isSorted);

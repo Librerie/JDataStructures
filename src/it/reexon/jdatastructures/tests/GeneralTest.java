@@ -8,6 +8,7 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 
+import it.reexon.jdatastructures.ParallelRandDouble;
 import it.reexon.jdatastructures.ParallelRandInt;
 
 
@@ -18,11 +19,13 @@ import it.reexon.jdatastructures.ParallelRandInt;
 public abstract class GeneralTest
 {
     protected final int seed = 1111;
-    protected final int lenght = 100000;
+    protected final int lenght = 1000;
     protected final int range = 100;
 
     protected ParallelRandInt rand = new ParallelRandInt(this.seed, this.lenght, this.range);
-    protected Integer[] arr = rand.getRandIntArr();
+    protected Integer[] arrInteger = rand.getRandIntArr();
+
+    protected Double[] arrDouble = new ParallelRandDouble(seed, lenght).getRandDoubleArr();
 
     /**
      * @throws java.lang.Exception

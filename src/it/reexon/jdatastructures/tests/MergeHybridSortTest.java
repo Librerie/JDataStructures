@@ -58,9 +58,9 @@ public class MergeHybridSortTest extends GeneralTest
         Boolean isSorted = false;
         try
         {
-            SortArray<Integer> sort = new SortArray<Integer>(super.arr.clone());
+            SortArray<Integer> sort = new SortArray<Integer>(super.arrInteger.clone());
             logger.debug("*** MergeHybridSort ");
-            logger.debug("*** Lenght = " + super.arr.length);
+            logger.debug("*** Lenght = " + super.arrInteger.length);
             sort.mergeHybridSort();
             isSorted = sort.isSorted();
             logger.debug("Sorted: " + isSorted);
