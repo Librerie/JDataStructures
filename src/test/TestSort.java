@@ -1,4 +1,4 @@
-package Test;
+package test;
 
 import java.util.Arrays;
 import Exceptions.EmptyArrayException;
@@ -24,10 +24,10 @@ public class TestSort
         int LENGHT = 100000;
         int RANGE = 100;
         // ################################################################
-        //		Sort Test
+        //		Sort test
         // ################################################################		
         System.out.println("\n\n################################################################\n");
-        System.out.println("Sort Test \n");
+        System.out.println("Sort test \n");
         System.out.print("Processors: " + Runtime.getRuntime().availableProcessors());
         System.out.println("    Threads: " + 2 * Runtime.getRuntime().availableProcessors());
         System.out.println("Random Array Creation [Lenght = " + LENGHT + "]");

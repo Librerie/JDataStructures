@@ -1,4 +1,4 @@
-package Test;
+package test;
 
 import java.util.ArrayList;
 import DataStructures.MaxHeap;
@@ -27,12 +27,12 @@ public class TestStructures
         Integer[] Arr = rand.getRandIntArr();
         ArrayList<Integer> ArrList = rand.getRandIntArrList();
         // ################################################################
-        //		Queue Test
+        //		Queue test
         // ################################################################		
         if (TEST_QUEUE)
         {
             System.out.println("################################################################\n");
-            System.out.println("Queue Test: \n");
+            System.out.println("Queue test: \n");
             System.out.println("With Array");
             Queue<Integer> q = new Queue<Integer>(Arr);
             System.out.println(q.toString());
@@ -55,12 +55,12 @@ public class TestStructures
             System.out.println("Empty: " + q.emptyQueue());
         }
         // ################################################################
-        //		Stack Test
+        //		Stack test
         // ################################################################		
         if (TEST_STACK)
         {
             System.out.println("################################################################\n");
-            System.out.println("Stack Test: \n");
+            System.out.println("Stack test: \n");
             System.out.println("With Array");
             Stack<Integer> s = new Stack<Integer>(Arr);
             System.out.println(s.toString());
@@ -83,12 +83,12 @@ public class TestStructures
             System.out.println("Empty: " + s.emptyStack());
         }
         // ################################################################
-        //		Min Heap Test
+        //		Min Heap test
         // ################################################################		
         if (TEST_HEAP_MIN)
         {
             System.out.println("################################################################\n");
-            System.out.println("Min Heap Test: \n");
+            System.out.println("Min Heap test: \n");
             System.out.println("With Array");
             MinHeap<Integer> minH = new MinHeap<Integer>(ArrList);
             System.out.println(minH.toString());
@@ -119,12 +119,12 @@ public class TestStructures
             System.out.println(minlH.toString());
         }
         // ################################################################
-        //		Max Heap Test
+        //		Max Heap test
         // ################################################################		
         if (TEST_HEAP_MAX)
         {
             System.out.println("################################################################\n");
-            System.out.println("Max Heap Test: \n");
+            System.out.println("Max Heap test: \n");
             System.out.println("With Array");
             MaxHeap<Integer> maxH = new MaxHeap<Integer>(ArrList);
             System.out.println(maxH.toString());
