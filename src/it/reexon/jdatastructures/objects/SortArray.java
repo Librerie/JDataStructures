@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import it.reexon.jdatastructures.exceptions.EmptyArrayException;
 import it.reexon.jdatastructures.exceptions.EmptyHeapException;
+import it.reexon.jdatastructures.exceptions.NotImplementException;
 import it.reexon.jdatastructures.exceptions.OutOfBoundException;
 import it.reexon.jdatastructures.objects.interfaces.SortInteface;
 import it.reexon.jdatastructures.sorts.BubbleSort;
@@ -656,62 +657,64 @@ public class SortArray<T extends Comparable<T>> implements SortInteface<T>
 
     public void mergeParallelSort()
     {
-        // TODO Auto-generated method stub
-
+        // TODO mergeParallelSort to implement
+        throw new NotImplementException();
     }
 
     public void mergeParallelSort(int leftBound, int rightBound) throws OutOfBoundException
     {
-        // TODO Auto-generated method stub
-
+        // TODO mergeParallelSort to implement
+        throw new NotImplementException();
     }
 
     public void mergeParallelSortFrom(int indexFrom) throws OutOfBoundException
     {
-        // TODO Auto-generated method stub
+        // TODO mergeParallelSortFrom to implement
+        throw new NotImplementException();
 
     }
 
     public void mergeParallelSortTo(int indexTo) throws OutOfBoundException
     {
-        // TODO Auto-generated method stub
+        // TODO mergeParallelSortTo to implement
+        throw new NotImplementException();
 
     }
 
     public void mergeSortHybridParallel()
     {
-        // TODO Auto-generated method stub
-
+        // TODO mergeSortHybridParallel to implement
+        throw new NotImplementException();
     }
 
     public void mergeSortHybridParallel(int leftBound, int rightBound) throws OutOfBoundException
     {
-        // TODO Auto-generated method stub
-
+        // TODO mergeSortHybridParallel to implement
+        throw new NotImplementException();
     }
 
     public void mergeSortHybridParallelFrom(int indexFrom) throws OutOfBoundException
     {
-        // TODO Auto-generated method stub
-
+        // TODO mergeSortHybridParallelFrom to implement
+        throw new NotImplementException();
     }
 
     public void mergeSortHybridParallelTo(int indexTo) throws OutOfBoundException
     {
-        // TODO Auto-generated method stub
-
+        // TODO mergeSortHybridParallelTo to implement
+        throw new NotImplementException();
     }
 
     public void quickSort()
     {
-        // TODO Auto-generated method stub
-
+        // TODO quickSort to implement
+        throw new NotImplementException();
     }
 
     public void quickSort(int leftBound, int rightBound) throws OutOfBoundException
     {
-        // TODO Auto-generated method stub
-
+        // TODO quickSort to implement
+        throw new NotImplementException();
     }
 
     public void quickSortFrom(int indexFrom) throws OutOfBoundException

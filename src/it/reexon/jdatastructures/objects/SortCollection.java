@@ -5,6 +5,7 @@ package it.reexon.jdatastructures.objects;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Iterator;
 
 import it.reexon.jdatastructures.exceptions.EmptyHeapException;
@@ -22,7 +23,6 @@ public class SortCollection<T extends Comparable<T>> implements Collection<T>, S
 
     public SortCollection(Collection<T> collectionSort)
     {
-        super();
         this.setCollectionSort(collectionSort);
     }
 
