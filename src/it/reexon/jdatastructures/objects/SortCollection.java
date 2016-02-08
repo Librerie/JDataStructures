@@ -56,6 +56,7 @@ public class SortCollection<T extends Comparable<T>> implements Collection<T>, S
         return null;
     }
 
+    @SuppressWarnings("hiding")
     public <T> T[] toArray(T[] a)
     {
         // TODO Auto-generated method stub
