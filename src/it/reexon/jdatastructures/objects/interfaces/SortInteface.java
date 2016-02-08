@@ -1,4 +1,4 @@
-package it.reexon.jdatastructures.sorts;
+package it.reexon.jdatastructures.objects.interfaces;
 
 import java.util.ArrayList;
 

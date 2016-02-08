@@ -1,16 +1,25 @@
-package it.reexon.jdatastructures.sorts;
+package it.reexon.jdatastructures.objects;
 
 import java.util.ArrayList;
 
 import it.reexon.jdatastructures.exceptions.EmptyArrayException;
 import it.reexon.jdatastructures.exceptions.EmptyHeapException;
 import it.reexon.jdatastructures.exceptions.OutOfBoundException;
+import it.reexon.jdatastructures.objects.interfaces.SortInteface;
+import it.reexon.jdatastructures.sorts.BubbleSort;
+import it.reexon.jdatastructures.sorts.HeapSort;
+import it.reexon.jdatastructures.sorts.InsertionSort;
+import it.reexon.jdatastructures.sorts.MergeHybridSort;
+import it.reexon.jdatastructures.sorts.MergeSort;
+import it.reexon.jdatastructures.sorts.SelectionSort;
+import it.reexon.jdatastructures.sorts.ShellSort;
+
 
 /**
  * @author Saporito Francesco
  * @param <T>
  */
-public class SortArray<T extends Comparable<T>>
+public class SortArray<T extends Comparable<T>> implements SortInteface<T>
 {
     private T[] arraySort;
 
@@ -58,7 +67,7 @@ public class SortArray<T extends Comparable<T>>
      * @throws OutOfBoundException 
      * 
      */
-    private void exceptionOutOfBoundThrower(int leftBound, int rightBound) throws OutOfBoundException
+    public void exceptionOutOfBoundThrower(int leftBound, int rightBound) throws OutOfBoundException
     {
         if (leftBound > rightBound)
         { // LeftBound > Right Bound
@@ -644,19 +653,244 @@ public class SortArray<T extends Comparable<T>>
     {
         this.heapSort(0, indexTo);
     }
-    // TODO
-    /*
-     * 
-     * mergeSortParallel
-     * mergeSortParallelHybrid
-     * quickSort
-     * quickSortHybrid
-     * quickSortParallel
-     * quickSortParallelHybrid
-     * treeSort
-     * countingSort
-     * introSort
-     * smoothSort 
-     * 
-     */
+
+    public void mergeParallelSort()
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void mergeParallelSort(int leftBound, int rightBound) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void mergeParallelSortFrom(int indexFrom) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void mergeParallelSortTo(int indexTo) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void mergeSortHybridParallel()
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void mergeSortHybridParallel(int leftBound, int rightBound) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void mergeSortHybridParallelFrom(int indexFrom) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void mergeSortHybridParallelTo(int indexTo) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void quickSort()
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void quickSort(int leftBound, int rightBound) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void quickSortFrom(int indexFrom) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void quickSortTo(int indexTo) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void quickHybridSort()
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void quickHybridSort(int leftBound, int rightBound) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void quickHybridSortFrom(int indexFrom) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void quickHybridSortTo(int indexTo) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void quickParallelSort()
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void quickParallelSort(int leftBound, int rightBound) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void quickParallelSortFrom(int indexFrom) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void quickParallelSortTo(int indexTo) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void quickParallelSortHybrid()
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void quickParallelSortHybrid(int leftBound, int rightBound) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void quickParallelSortHybridFrom(int indexFrom) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void quickParallelSortHybridTo(int indexTo) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void treeSort()
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void treeSort(int leftBound, int rightBound) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void treeSortFrom(int indexFrom) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void treeSortTo(int indexTo) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void countingSort()
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void countingSort(int leftBound, int rightBound) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void countingSortFrom(int indexFrom) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void countingSortTo(int indexTo) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void introSort()
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void introSort(int leftBound, int rightBound) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void introSortFrom(int indexFrom) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void introSortTo(int indexTo) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void smoothSort()
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void smoothSort(int leftBound, int rightBound) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void smoothSortFrom(int indexFrom) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void smoothSortTo(int indexTo) throws OutOfBoundException
+    {
+        // TODO Auto-generated method stub
+
+    }
 }

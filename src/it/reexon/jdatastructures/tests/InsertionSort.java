@@ -13,7 +13,7 @@ import org.junit.Test;
 
 import it.reexon.jdatastructures.exceptions.EmptyArrayException;
 import it.reexon.jdatastructures.exceptions.OutOfBoundException;
-import it.reexon.jdatastructures.sorts.SortArray;
+import it.reexon.jdatastructures.objects.SortArray;
 
 
 public class InsertionSort extends GeneralTest
