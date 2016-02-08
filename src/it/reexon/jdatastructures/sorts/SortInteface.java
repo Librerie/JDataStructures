@@ -739,6 +739,37 @@ public interface SortInteface<T>
      */
     public void introSortTo(int indexTo) throws OutOfBoundException;
 
+  //#################################################################
+    //  Smooth Sort
+    //################################################################  
+
+    /**
+     * 
+     */
+    public void smoothSort();
+
+    /**
+     * 
+     * @param leftBound
+     * @param rightBound
+     * @throws OutOfBoundException
+     */
+    public void smoothSort(int leftBound, int rightBound) throws OutOfBoundException;
+
+    /**
+     * 
+     * @param indexFrom
+     * @throws OutOfBoundException
+     */
+    public void smoothSortFrom(int indexFrom) throws OutOfBoundException;
+
+    /**
+     * 
+     * @param indexTo
+     * @throws OutOfBoundException
+     */
+    public void smoothSortTo(int indexTo) throws OutOfBoundException;
+
     // TODO
     /*
      * 
@@ -751,7 +782,7 @@ public interface SortInteface<T>
      * treeSort - OK
      * countingSort - OK
      * introSort - OK
-     * smoothSort 
+     * smoothSort - OK
      * 
      */
 
