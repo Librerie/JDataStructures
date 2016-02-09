@@ -48,7 +48,7 @@ public class SelectionSortTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.sorts.SelectionSort#SelectionSort(T[], int, int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.sorts.SelectionSort#SelectionSort(T[], int, int)}.
      */
     @Test
     public final void testSelectionSort()

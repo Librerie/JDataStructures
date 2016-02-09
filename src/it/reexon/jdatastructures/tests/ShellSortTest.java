@@ -48,7 +48,7 @@ public class ShellSortTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.sorts.ShellSort#ShellSort(T[], int, int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.sorts.ShellSort#ShellSort(T[], int, int)}.
      */
     @Test
     public final void testShellSort()

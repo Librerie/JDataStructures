@@ -16,7 +16,7 @@ import it.reexon.jdatastructures.exceptions.OutOfBoundException;
 import it.reexon.jdatastructures.objects.SortArray;
 
 
-public class InsertionSort extends GeneralTest
+public class InsertionSortTest extends GeneralTest
 {
     private static final Logger logger = LogManager.getLogger(HeapSortTest.class);
 
@@ -49,7 +49,7 @@ public class InsertionSort extends GeneralTest
         try
         {
             SortArray<Integer> sort = new SortArray<Integer>(super.arrInteger.clone());
-            logger.debug("*** InsertionSort ");
+            logger.debug("*** InsertionSortTest ");
             logger.debug("*** Lenght = " + super.arrInteger.length);
             sort.insertionSort();
             isSorted = sort.isSorted();
@@ -66,7 +66,7 @@ public class InsertionSort extends GeneralTest
         assertTrue(isSorted);
 
         long duration = super.durationMilliseconds(startTime);
-        System.out.println("*** InsertionSort - passed: " + isSorted + " time: " + duration + " ms");
+        System.out.println("*** InsertionSortTest - passed: " + isSorted + " time: " + duration + " ms");
     }
 
 }

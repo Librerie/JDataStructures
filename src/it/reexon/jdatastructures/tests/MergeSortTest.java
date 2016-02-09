@@ -47,7 +47,7 @@ public class MergeSortTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.sorts.MergeSort#MergeSort(T[], int, int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.sorts.MergeSort#MergeSort(T[], int, int)}.
      */
     @Test
     public final void testMergeSort()

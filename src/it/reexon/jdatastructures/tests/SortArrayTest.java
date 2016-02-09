@@ -48,7 +48,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#SortArray(T[])}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#SortArray(T[])}.
      */
     @Test
     public final void testSortArrayTArray()
@@ -80,7 +80,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#SortArray(java.util.ArrayList)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#SortArray(java.util.ArrayList)}.
      */
     @Test
     public final void testSortArrayArrayListOfT()
@@ -89,7 +89,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#isSorted()}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#isSorted()}.
      */
     @Test
     public final void testIsSorted()
@@ -98,7 +98,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#printArray()}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#printArray()}.
      */
     @Test
     public final void testPrintArray()
@@ -107,7 +107,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#getArray()}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#getArray()}.
      */
     @Test
     public final void testGetArray()
@@ -116,7 +116,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#getArrayList()}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#getArrayList()}.
      */
     @Test
     public final void testGetArrayList()
@@ -125,7 +125,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#insertionSort(int, int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#insertionSort(int, int)}.
      */
     @Test
     public final void testInsertionSortIntInt()
@@ -134,7 +134,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#insertionSort()}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#insertionSort()}.
      */
     @Test
     public final void testInsertionSort()
@@ -143,7 +143,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#insertionSortFrom(int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#insertionSortFrom(int)}.
      */
     @Test
     public final void testInsertionSortFrom()
@@ -152,7 +152,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#insertionSortTo(int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#insertionSortTo(int)}.
      */
     @Test
     public final void testInsertionSortTo()
@@ -161,7 +161,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#selectionSort(int, int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#selectionSort(int, int)}.
      */
     @Test
     public final void testSelectionSortIntInt()
@@ -170,7 +170,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#selectionSort()}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#selectionSort()}.
      */
     @Test
     public final void testSelectionSort()
@@ -179,7 +179,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#selectionSortFrom(int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#selectionSortFrom(int)}.
      */
     @Test
     public final void testSelectionSortFrom()
@@ -188,7 +188,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#selectionSortTo(int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#selectionSortTo(int)}.
      */
     @Test
     public final void testSelectionSortTo()
@@ -197,7 +197,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#bubbleSort(int, int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#bubbleSort(int, int)}.
      */
     @Test
     public final void testBubbleSortIntInt()
@@ -206,7 +206,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#bubbleSort()}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#bubbleSort()}.
      */
     @Test
     public final void testBubbleSort()
@@ -215,7 +215,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#bubbleSortFrom(int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#bubbleSortFrom(int)}.
      */
     @Test
     public final void testBubbleSortFrom()
@@ -224,7 +224,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#bubbleSortTo(int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#bubbleSortTo(int)}.
      */
     @Test
     public final void testBubbleSortTo()
@@ -233,7 +233,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#shellSort(int, int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#shellSort(int, int)}.
      */
     @Test
     public final void testShellSortIntInt()
@@ -242,7 +242,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#shellSort()}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#shellSort()}.
      */
     @Test
     public final void testShellSort()
@@ -251,7 +251,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#shellSortFrom(int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#shellSortFrom(int)}.
      */
     @Test
     public final void testShellSortFrom()
@@ -260,7 +260,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#shellSortTo(int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#shellSortTo(int)}.
      */
     @Test
     public final void testShellSortTo()
@@ -269,7 +269,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#mergeSort(int, int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#mergeSort(int, int)}.
      */
     @Test
     public final void testMergeSortIntInt()
@@ -278,7 +278,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#mergeSort()}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#mergeSort()}.
      */
     @Test
     public final void testMergeSort()
@@ -287,7 +287,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#mergeSortFrom(int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#mergeSortFrom(int)}.
      */
     @Test
     public final void testMergeSortFrom()
@@ -296,7 +296,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#mergeSortTo(int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#mergeSortTo(int)}.
      */
     @Test
     public final void testMergeSortTo()
@@ -305,7 +305,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#mergeHybridSort(int, int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#mergeHybridSort(int, int)}.
      */
     @Test
     public final void testMergeHybridSortIntInt()
@@ -314,7 +314,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#mergeHybridSort()}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#mergeHybridSort()}.
      */
     @Test
     public final void testMergeHybridSort()
@@ -323,7 +323,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#mergeHybridSortFrom(int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#mergeHybridSortFrom(int)}.
      */
     @Test
     public final void testMergeHybridSortFrom()
@@ -332,7 +332,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#mergeHybridSortTo(int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#mergeHybridSortTo(int)}.
      */
     @Test
     public final void testMergeHybridSortTo()
@@ -341,7 +341,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#heapSort(int, int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#heapSort(int, int)}.
      */
     @Test
     public final void testHeapSortIntInt()
@@ -350,7 +350,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#heapSort()}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#heapSort()}.
      */
     @Test
     public final void testHeapSort()
@@ -359,7 +359,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#heapSortFrom(int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#heapSortFrom(int)}.
      */
     @Test
     public final void testHeapSortFrom()
@@ -368,7 +368,7 @@ public class SortArrayTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.objects.SortArray#heapSortTo(int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.objects.SortArray#heapSortTo(int)}.
      */
     @Test
     public final void testHeapSortTo()

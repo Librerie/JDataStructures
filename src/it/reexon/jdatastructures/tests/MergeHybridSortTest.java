@@ -48,7 +48,7 @@ public class MergeHybridSortTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.sorts.MergeHybridSort#MergeHybridSort(T[], int, int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.sorts.MergeHybridSort#MergeHybridSort(T[], int, int)}.
      */
     @Test
     public final void testMergeHybridSort()

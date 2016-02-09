@@ -44,7 +44,7 @@ public class TestSort
             try
             {
                 System.out.print("\n");
-                System.out.println("*** InsertionSort ");
+                System.out.println("*** InsertionSortTest ");
                 //sort.printArray();
                 sort.insertionSort();
                 //sort.printArray();

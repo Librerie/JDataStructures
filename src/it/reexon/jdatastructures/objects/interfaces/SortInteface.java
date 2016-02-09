@@ -243,8 +243,8 @@ public interface SortInteface<T>
      * Best Case: O(nlogn)
      * </pre><p>
      * 
-     * Works As MergeSort, Except That Calls The InsertionSort Algorithm
-     * If The Current Array's Lenght Is Less Than 10, Since InsertionSort
+     * Works As MergeSort, Except That Calls The InsertionSortTest Algorithm
+     * If The Current Array's Lenght Is Less Than 10, Since InsertionSortTest
      * Is The Fastest Algorithm On Small Input
      * 
      * @param leftBound Left Limit For The Range Of Array's Values To Sort

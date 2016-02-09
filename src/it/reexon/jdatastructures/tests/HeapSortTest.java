@@ -49,7 +49,7 @@ public class HeapSortTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.sorts.HeapSort#HeapSort(T[], int, int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.sorts.HeapSort#HeapSort(T[], int, int)}.
      */
     @Test
     public final void testHeapSort()
