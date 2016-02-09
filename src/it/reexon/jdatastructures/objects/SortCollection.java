@@ -5,7 +5,6 @@ package it.reexon.jdatastructures.objects;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.Iterator;
 
 import it.reexon.jdatastructures.exceptions.EmptyHeapException;
