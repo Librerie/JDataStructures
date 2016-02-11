@@ -1,13 +1,15 @@
 package it.reexon.jdatastructures.tests.structures;
 
 import java.util.ArrayList;
-import DataStructures.MaxHeap;
-import DataStructures.MinHeap;
-import DataStructures.Queue;
-import DataStructures.Stack;
-import Exceptions.EmptyArrayException;
-import Exceptions.EmptyHeapException;
+
 import it.reexon.jdatastructures.ParallelRandInt;
+import it.reexon.jdatastructures.exceptions.EmptyArrayException;
+import it.reexon.jdatastructures.exceptions.EmptyHeapException;
+import it.reexon.jdatastructures.structures.MaxHeap;
+import it.reexon.jdatastructures.structures.MinHeap;
+import it.reexon.jdatastructures.structures.Queue;
+import it.reexon.jdatastructures.structures.Stack;
+
 
 @Deprecated
 public class TestStructures
