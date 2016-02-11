@@ -1,11 +1,12 @@
 package it.reexon.jdatastructures.tests.sorts;
 
 import java.util.Arrays;
-import Exceptions.EmptyArrayException;
-import Exceptions.EmptyHeapException;
-import Exceptions.OutOfBoundException;
-import Sort.SortArray;
+
 import it.reexon.jdatastructures.ParallelRandInt;
+import it.reexon.jdatastructures.exceptions.EmptyArrayException;
+import it.reexon.jdatastructures.exceptions.EmptyHeapException;
+import it.reexon.jdatastructures.exceptions.OutOfBoundException;
+import it.reexon.jdatastructures.objects.SortArray;
 
 @Deprecated
 public class TestSort

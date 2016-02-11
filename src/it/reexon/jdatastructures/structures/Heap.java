@@ -16,12 +16,19 @@ public abstract class Heap<T extends Comparable<T>>
     protected ArrayList<T> heapArrList;
     protected int heapSize;
 
+    /**
+     * 
+     */
     public Heap()
     {
         this.heapSize = -1;
         this.heapArrList = new ArrayList<T>();
     }
 
+    /**
+     * 
+     * @param arrayList
+     */
     public Heap(ArrayList<T> arrayList)
     {
         this.heapSize = arrayList.size() - 1;
@@ -29,6 +36,10 @@ public abstract class Heap<T extends Comparable<T>>
         this.buildHeap();
     }
 
+    /**
+     * 
+     * @param array
+     */
     public Heap(T[] array)
     {
         this.heapArrList = new ArrayList<T>();

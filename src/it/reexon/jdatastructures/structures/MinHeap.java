@@ -1,9 +1,35 @@
 package it.reexon.jdatastructures.structures;
 
+import java.util.ArrayList;
+
 import it.reexon.jdatastructures.exceptions.EmptyHeapException;
+
 
 public class MinHeap<T extends Comparable<T>> extends Heap<T>
 {
+    /**
+     * 
+     */
+    public MinHeap()
+    {
+        super();
+    }
+
+    /**
+     * @param arrayList
+     */
+    public MinHeap(ArrayList<T> arrayList)
+    {
+        super(arrayList);
+    }
+
+    /**
+     * @param array
+     */
+    public MinHeap(T[] array)
+    {
+        super(array);
+    }
 
     @Override
     protected void buildHeap()
@@ -52,15 +78,11 @@ public class MinHeap<T extends Comparable<T>> extends Heap<T>
         }
     }
 
-    /* (non-Javadoc)
-     * @see java.lang.Object#toString()
+    /**
+     * 
+     * @return
+     * @throws EmptyHeapException
      */
-    @Override
-    public String toString()
-    {
-        return String.format("MaxHeap []");
-    }
-
     public T extractMinValue() throws EmptyHeapException
     {
         if (this.heapArrList.size() == 0)
@@ -76,9 +98,22 @@ public class MinHeap<T extends Comparable<T>> extends Heap<T>
         return minValue;
     }
 
+    /**
+     * 
+     */
     public void insert(T value)
     {
         this.heapArrList.add(value);
         this.heapSize++;
         this.buildHeap();
-    }}
+    }
+
+    /* (non-Javadoc)
+     * @see java.lang.Object#toString()
+     */
+    @Override
+    public String toString()
+    {
+        return String.format("MaxHeap []");
+    }
+}

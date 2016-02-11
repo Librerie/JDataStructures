@@ -1,7 +1,36 @@
 package it.reexon.jdatastructures.structures;
 
+import java.util.ArrayList;
+
+import it.reexon.jdatastructures.exceptions.EmptyHeapException;
+
+
 public class MaxHeap<T extends Comparable<T>> extends Heap<T>
 {
+
+    /**
+     * 
+     */
+    public MaxHeap()
+    {
+        super();
+    }
+
+    /**
+     * @param arrayList
+     */
+    public MaxHeap(ArrayList<T> arrayList)
+    {
+        super(arrayList);
+    }
+
+    /**
+     * @param array
+     */
+    public MaxHeap(T[] array)
+    {
+        super(array);
+    }
 
     @Override
     protected void buildHeap()
@@ -48,6 +77,26 @@ public class MaxHeap<T extends Comparable<T>> extends Heap<T>
                 this.MaxHeapify(Max);
             }
         }
+    }
+
+    /**
+     * 
+     * @return
+     * @throws EmptyHeapException
+     */
+    public T extractMaxValue() throws EmptyHeapException
+    {
+        if (this.heapArrList.size() == 0)
+        {
+            throw new EmptyHeapException("Heap Is Empty");
+        }
+        T MaxValue = this.heapArrList.get(0);
+        T lastValue = this.heapArrList.get(this.heapSize);
+        this.heapArrList.set(0, lastValue);
+        this.heapArrList.remove(this.heapSize);
+        this.heapSize = this.heapSize - 1;
+        this.MaxHeapify(0);
+        return MaxValue;
     }
 
     /* (non-Javadoc)
