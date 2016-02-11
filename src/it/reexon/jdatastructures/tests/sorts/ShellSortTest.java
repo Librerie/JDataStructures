@@ -1,7 +1,7 @@
 /**
  * 
  */
-package it.reexon.jdatastructures.tests;
+package it.reexon.jdatastructures.tests.sorts;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
@@ -15,18 +15,18 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import it.reexon.jdatastructures.exceptions.EmptyArrayException;
-import it.reexon.jdatastructures.exceptions.EmptyHeapException;
 import it.reexon.jdatastructures.exceptions.OutOfBoundException;
 import it.reexon.jdatastructures.objects.SortArray;
+import it.reexon.jdatastructures.tests.GeneralTest;
 
 
 /**
  * @author marco.velluto
  *
  */
-public class HeapSortTest extends GeneralTest
+public class ShellSortTest extends GeneralTest
 {
-    private static final Logger logger = LogManager.getLogger(HeapSortTest.class);
+    private static final Logger logger = LogManager.getLogger(MergeSortTest.class);
 
     @BeforeClass
     public static void setUpBeforeClass() throws Exception
@@ -49,10 +49,10 @@ public class HeapSortTest extends GeneralTest
     }
 
     /**
-     * SortsTest method for {@link it.reexon.jdatastructures.sorts.HeapSort#HeapSort(T[], int, int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.sorts.ShellSort#ShellSort(T[], int, int)}.
      */
     @Test
-    public final void testHeapSort()
+    public final void testShellSort()
     {
         long startTime = System.nanoTime();
 
@@ -60,9 +60,9 @@ public class HeapSortTest extends GeneralTest
         try
         {
             SortArray<Integer> sort = new SortArray<Integer>(super.arrInteger.clone());
-            logger.debug("*** HeapSort ");
+            logger.debug("*** SelectionsSort ");
             logger.debug("*** Lenght = " + super.arrInteger.length);
-            sort.heapSort();
+            sort.shellSort();
             isSorted = sort.isSorted();
             logger.debug("Sorted: " + isSorted);
         }
@@ -74,14 +74,10 @@ public class HeapSortTest extends GeneralTest
         {
             fail("Error: " + e);
         }
-        catch (EmptyHeapException e)
-        {
-            fail("Error: " + e);
-        }
         assertTrue(isSorted);
 
         long duration = super.durationMilliseconds(startTime);
-        System.out.println("*** HeapSort - passed: " + isSorted + " time: " + duration + " ms");
+        System.out.println("*** MergeSort - passed: " + isSorted + " time: " + duration + " ms");
     }
 
 }

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package it.reexon.jdatastructures.tests;
+package it.reexon.jdatastructures.tests.sorts;
 
 import static org.junit.Assert.*;
 
@@ -16,6 +16,7 @@ import org.junit.Test;
 import it.reexon.jdatastructures.exceptions.EmptyArrayException;
 import it.reexon.jdatastructures.exceptions.OutOfBoundException;
 import it.reexon.jdatastructures.objects.SortArray;
+import it.reexon.jdatastructures.tests.GeneralTest;
 
 
 /**

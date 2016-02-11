@@ -1,7 +1,7 @@
 /**
  * 
  */
-package it.reexon.jdatastructures.tests;
+package it.reexon.jdatastructures.tests.sorts;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
@@ -17,15 +17,16 @@ import org.junit.Test;
 import it.reexon.jdatastructures.exceptions.EmptyArrayException;
 import it.reexon.jdatastructures.exceptions.OutOfBoundException;
 import it.reexon.jdatastructures.objects.SortArray;
+import it.reexon.jdatastructures.tests.GeneralTest;
 
 
 /**
  * @author marco.velluto
  *
  */
-public class ShellSortTest extends GeneralTest
+public class MergeHybridSortTest extends GeneralTest
 {
-    private static final Logger logger = LogManager.getLogger(MergeSortTest.class);
+    private static final Logger logger = LogManager.getLogger(MergeHybridSortTest.class);
 
     @BeforeClass
     public static void setUpBeforeClass() throws Exception
@@ -48,10 +49,10 @@ public class ShellSortTest extends GeneralTest
     }
 
     /**
-     * SortsTest method for {@link it.reexon.jdatastructures.sorts.ShellSort#ShellSort(T[], int, int)}.
+     * SortsTest method for {@link it.reexon.jdatastructures.sorts.MergeHybridSort#MergeHybridSort(T[], int, int)}.
      */
     @Test
-    public final void testShellSort()
+    public final void testMergeHybridSort()
     {
         long startTime = System.nanoTime();
 
@@ -59,9 +60,9 @@ public class ShellSortTest extends GeneralTest
         try
         {
             SortArray<Integer> sort = new SortArray<Integer>(super.arrInteger.clone());
-            logger.debug("*** SelectionsSort ");
+            logger.debug("*** MergeHybridSort ");
             logger.debug("*** Lenght = " + super.arrInteger.length);
-            sort.shellSort();
+            sort.mergeHybridSort();
             isSorted = sort.isSorted();
             logger.debug("Sorted: " + isSorted);
         }
@@ -76,7 +77,7 @@ public class ShellSortTest extends GeneralTest
         assertTrue(isSorted);
 
         long duration = super.durationMilliseconds(startTime);
-        System.out.println("*** MergeSort - passed: " + isSorted + " time: " + duration + " ms");
+        System.out.println("*** MergeHybridSort - passed: " + isSorted + " time: " + duration + " ms");
     }
 
 }

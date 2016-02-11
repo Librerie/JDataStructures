@@ -13,13 +13,13 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
-import it.reexon.jdatastructures.tests.BubbleSortTest;
-import it.reexon.jdatastructures.tests.HeapSortTest;
-import it.reexon.jdatastructures.tests.InsertionSortTest;
-import it.reexon.jdatastructures.tests.MergeHybridSortTest;
-import it.reexon.jdatastructures.tests.MergeSortTest;
-import it.reexon.jdatastructures.tests.SelectionSortTest;
-import it.reexon.jdatastructures.tests.ShellSortTest;
+import it.reexon.jdatastructures.tests.sorts.BubbleSortTest;
+import it.reexon.jdatastructures.tests.sorts.HeapSortTest;
+import it.reexon.jdatastructures.tests.sorts.InsertionSortTest;
+import it.reexon.jdatastructures.tests.sorts.MergeHybridSortTest;
+import it.reexon.jdatastructures.tests.sorts.MergeSortTest;
+import it.reexon.jdatastructures.tests.sorts.SelectionSortTest;
+import it.reexon.jdatastructures.tests.sorts.ShellSortTest;
 
 
 /**
