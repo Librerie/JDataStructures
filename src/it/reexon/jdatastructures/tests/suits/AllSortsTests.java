@@ -13,9 +13,20 @@ import it.reexon.jdatastructures.tests.sorts.SelectionSortTest;
 import it.reexon.jdatastructures.tests.sorts.ShellSortTest;
 import it.reexon.jdatastructures.tests.sorts.SortArrayTest;
 
+
 @RunWith(Suite.class)
-@SuiteClasses({ BubbleSortTest.class, HeapSortTest.class, InsertionSortTest.class, MergeHybridSortTest.class, MergeSortTest.class,
-        SelectionSortTest.class, ShellSortTest.class, SortArrayTest.class })
+//@f:off
+@SuiteClasses({ 
+    BubbleSortTest.class, 
+    HeapSortTest.class, 
+    InsertionSortTest.class, 
+    MergeHybridSortTest.class, 
+    MergeSortTest.class,
+    SelectionSortTest.class, 
+    ShellSortTest.class, 
+    SortArrayTest.class 
+    })
+//@f:on
 public class AllSortsTests
 {
 
