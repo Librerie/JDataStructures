@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * @author marco.velluto
  * @param <T>
  */
-public abstract class Heap<T extends Comparable<T>>
+public abstract class AbstractHeap<T extends Comparable<T>>
 {
     protected ArrayList<T> heapArrList;
     protected int heapSize;
@@ -19,7 +19,7 @@ public abstract class Heap<T extends Comparable<T>>
     /**
      * 
      */
-    public Heap()
+    public AbstractHeap()
     {
         this.heapSize = -1;
         this.heapArrList = new ArrayList<T>();
@@ -29,7 +29,7 @@ public abstract class Heap<T extends Comparable<T>>
      * 
      * @param arrayList
      */
-    public Heap(ArrayList<T> arrayList)
+    public AbstractHeap(ArrayList<T> arrayList)
     {
         this.heapSize = arrayList.size() - 1;
         this.heapArrList = arrayList;
@@ -40,7 +40,7 @@ public abstract class Heap<T extends Comparable<T>>
      * 
      * @param array
      */
-    public Heap(T[] array)
+    public AbstractHeap(T[] array)
     {
         this.heapArrList = new ArrayList<T>();
         for (int i = 0; i < array.length; i++)
@@ -73,7 +73,7 @@ public abstract class Heap<T extends Comparable<T>>
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Heap<?> other = (Heap<?>) obj;
+        AbstractHeap<?> other = (AbstractHeap<?>) obj;
         if (heapArrList == null)
         {
             if (other.heapArrList != null)
@@ -107,7 +107,7 @@ public abstract class Heap<T extends Comparable<T>>
     }
 
     /**
-     * Create An Array With The Elements Of The Max Heap
+     * Create An Array With The Elements Of The Max AbstractHeap
      * @return The Array
      */
     @SuppressWarnings("unchecked") //TOGLIERE WARNING

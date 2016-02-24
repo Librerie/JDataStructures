@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import it.reexon.jdatastructures.exceptions.EmptyHeapException;
 
 
-public class MaxHeap<T extends Comparable<T>> extends Heap<T>
+public class MaxHeap<T extends Comparable<T>> extends AbstractHeap<T>
 {
 
     /**
@@ -88,7 +88,7 @@ public class MaxHeap<T extends Comparable<T>> extends Heap<T>
     {
         if (this.heapArrList.size() == 0)
         {
-            throw new EmptyHeapException("Heap Is Empty");
+            throw new EmptyHeapException("AbstractHeap Is Empty");
         }
         T MaxValue = this.heapArrList.get(0);
         T lastValue = this.heapArrList.get(this.heapSize);

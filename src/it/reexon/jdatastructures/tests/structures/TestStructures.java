@@ -85,12 +85,12 @@ public class TestStructures
             System.out.println("Empty: " + s.emptyStack());
         }
         // ################################################################
-        //		Min Heap test
+        //		Min AbstractHeap test
         // ################################################################		
         if (TEST_HEAP_MIN)
         {
             System.out.println("################################################################\n");
-            System.out.println("Min Heap test: \n");
+            System.out.println("Min AbstractHeap test: \n");
             System.out.println("With Array");
             MinHeap<Integer> minH = new MinHeap<Integer>(ArrList);
             System.out.println(minH.toString());
@@ -121,12 +121,12 @@ public class TestStructures
             System.out.println(minlH.toString());
         }
         // ################################################################
-        //		Max Heap test
+        //		Max AbstractHeap test
         // ################################################################		
         if (TEST_HEAP_MAX)
         {
             System.out.println("################################################################\n");
-            System.out.println("Max Heap test: \n");
+            System.out.println("Max AbstractHeap test: \n");
             System.out.println("With Array");
             MaxHeap<Integer> maxH = new MaxHeap<Integer>(ArrList);
             System.out.println(maxH.toString());

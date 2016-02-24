@@ -54,7 +54,7 @@ public class HeapTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.structures.Heap#hashCode()}.
+     * Test method for {@link it.reexon.jdatastructures.structures.AbstractHeap#hashCode()}.
      */
     @Test
     public final void testHashCode()
@@ -63,7 +63,7 @@ public class HeapTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.structures.Heap#Heap()}.
+     * Test method for {@link it.reexon.jdatastructures.structures.AbstractHeap#Heap()}.
      */
     @Test
     public final void testHeap()
@@ -72,7 +72,7 @@ public class HeapTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.structures.Heap#Heap(java.util.ArrayList)}.
+     * Test method for {@link it.reexon.jdatastructures.structures.AbstractHeap#Heap(java.util.ArrayList)}.
      */
     @Test
     public final void testHeapArrayListOfT()
@@ -81,7 +81,7 @@ public class HeapTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.structures.Heap#Heap(T[])}.
+     * Test method for {@link it.reexon.jdatastructures.structures.AbstractHeap#Heap(T[])}.
      */
     @Test
     public final void testHeapTArray()
@@ -90,7 +90,7 @@ public class HeapTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.structures.Heap#buildHeap()}.
+     * Test method for {@link it.reexon.jdatastructures.structures.AbstractHeap#buildHeap()}.
      */
     @Test
     public final void testBuildHeap()
@@ -99,7 +99,7 @@ public class HeapTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.structures.Heap#clone()}.
+     * Test method for {@link it.reexon.jdatastructures.structures.AbstractHeap#clone()}.
      */
     @Test
     public final void testClone()
@@ -108,7 +108,7 @@ public class HeapTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.structures.Heap#equals(java.lang.Object)}.
+     * Test method for {@link it.reexon.jdatastructures.structures.AbstractHeap#equals(java.lang.Object)}.
      */
     @Test
     public final void testEqualsObject()
@@ -117,7 +117,7 @@ public class HeapTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.structures.Heap#insert(java.lang.Comparable)}.
+     * Test method for {@link it.reexon.jdatastructures.structures.AbstractHeap#insert(java.lang.Comparable)}.
      */
     @Test
     public final void testInsert()
@@ -126,7 +126,7 @@ public class HeapTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.structures.Heap#toArray()}.
+     * Test method for {@link it.reexon.jdatastructures.structures.AbstractHeap#toArray()}.
      */
     @Test
     public final void testToArray()
@@ -135,7 +135,7 @@ public class HeapTest extends GeneralTest
     }
 
     /**
-     * Test method for {@link it.reexon.jdatastructures.structures.Heap#toString()}.
+     * Test method for {@link it.reexon.jdatastructures.structures.AbstractHeap#toString()}.
      */
     @Test
     public final void testToString()

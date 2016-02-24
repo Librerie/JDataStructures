@@ -1,7 +1,6 @@
 package it.reexon.jdatastructures.structures;
 
 /**
- * @author Saporito Francesco
  * @param <T>
  */
 public class Tree<T extends Comparable<T>>

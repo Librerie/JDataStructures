@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import it.reexon.jdatastructures.exceptions.EmptyHeapException;
 
 
-public class MinHeap<T extends Comparable<T>> extends Heap<T>
+public class MinHeap<T extends Comparable<T>> extends AbstractHeap<T>
 {
     /**
      * 
@@ -87,7 +87,7 @@ public class MinHeap<T extends Comparable<T>> extends Heap<T>
     {
         if (this.heapArrList.size() == 0)
         {
-            throw new EmptyHeapException("Heap Is Empty");
+            throw new EmptyHeapException("AbstractHeap Is Empty");
         }
         T minValue = this.heapArrList.get(0);
         T lastValue = this.heapArrList.get(this.heapSize);

@@ -95,7 +95,7 @@ public interface SortInteface<T>
     public ArrayList<T> getArrayList();
 
     //#################################################################
-    //  Heap Sort
+    //  AbstractHeap Sort
     //#################################################################
 
     /**
@@ -118,7 +118,7 @@ public interface SortInteface<T>
      * </pre><p>
      * 
      * The Algorithms Works By Creating A MinHeap With The Array And By Extracting
-     * Minimum Value From THe Heap, Until The Heap Is Empty
+     * Minimum Value From THe AbstractHeap, Until The AbstractHeap Is Empty
      * 
      * @param leftBound Left Limit For The Range Of Array's Values To Sort
      * @param rightBound Right Limit For The Range Of Array's Values To Sort

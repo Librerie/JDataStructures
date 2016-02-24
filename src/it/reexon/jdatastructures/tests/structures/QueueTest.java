@@ -160,14 +160,4 @@ public class QueueTest extends GeneralTest
     {
         fail("Not yet implemented"); // TODO
     }
-
-    /**
-     * Test method for {@link it.reexon.jdatastructures.structures.Queue#toString()}.
-     */
-    @Test
-    public final void testToString()
-    {
-        fail("Not yet implemented"); // TODO
-    }
-
 }

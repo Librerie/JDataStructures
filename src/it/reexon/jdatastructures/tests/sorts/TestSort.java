@@ -145,7 +145,7 @@ public class TestSort
                 e.printStackTrace();
             }
         }
-        // Heap Sort	
+        // AbstractHeap Sort	
         if (TEST_HEAP_SORT || TEST_ALL_SORT)
         {
             try
