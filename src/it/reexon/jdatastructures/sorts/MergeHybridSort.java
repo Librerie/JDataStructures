@@ -2,6 +2,7 @@ package it.reexon.jdatastructures.sorts;
 
 /**
  * @author Saporito Francesco
+ * @Modifier Marco Velluto
  * @param <T>
  */
 public class MergeHybridSort<T extends Comparable<T>> extends MergeSort<T>

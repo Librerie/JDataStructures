@@ -5,6 +5,7 @@ import it.reexon.jdatastructures.structures.MinHeap;
 
 /**
  * @author Saporito Francesco
+ * @Modifier Marco Velluto
  * @param <T>
  */
 public class HeapSort<T extends Comparable<T>>

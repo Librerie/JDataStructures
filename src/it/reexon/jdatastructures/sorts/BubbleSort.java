@@ -4,6 +4,7 @@ import it.reexon.jdatastructures.exceptions.OutOfBoundException;
 
 /**
  * @author Saporito Francesco
+ * @modifier Marco Velluto
  * @param <T>
  */
 public class BubbleSort<T extends Comparable<T>>

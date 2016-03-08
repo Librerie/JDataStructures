@@ -2,6 +2,7 @@ package it.reexon.jdatastructures.sorts;
 
 /**
  * @author Saporito Francesco
+ * @Modifier Marco Velluto
  * @param <T>
  */
 public class SelectionSort<T extends Comparable<T>>

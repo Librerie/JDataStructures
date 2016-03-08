@@ -4,6 +4,7 @@ import java.lang.reflect.Array;
 
 /**
  * @author Saporito Francesco
+ * @Modifier Marco Velluto
  * @param <T>
  */
 public class MergeSort<T extends Comparable<T>>

@@ -3,8 +3,6 @@
  */
 package it.reexon.jdatastructures.exceptions;
 
-import java.util.LinkedList;
-
 /**
  * @author marco.velluto
  */
