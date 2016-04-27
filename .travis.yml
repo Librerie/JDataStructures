@@ -15,10 +15,11 @@ notifications:
 env: GDAL_LIBRARY_NAME=disabled_see_geot-4733
 os:
   - linux
+  - windows
   - osx
 matrix:
   allow_failures:
     - os: osx
   include:
    - os: linux
-     jdk: oraclejdk8
+     jdk: oraclejdk5
