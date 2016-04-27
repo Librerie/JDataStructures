@@ -113,7 +113,7 @@ public abstract class AbstractHeap<T extends Comparable<T>>
     @SuppressWarnings("unchecked") //TOGLIERE WARNING
     public T[] toArray()
     {
-        T[] arr = (T[]) this.heapArrList.toArray((T[]) Array.newInstance(this.heapArrList.get(0).getClass(), this.heapSize));
+        T[] arr = this.heapArrList.toArray((T[]) Array.newInstance(this.heapArrList.get(0).getClass(), this.heapSize));
         return arr;
     }
 

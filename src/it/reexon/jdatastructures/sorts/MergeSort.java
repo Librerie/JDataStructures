@@ -54,7 +54,7 @@ public class MergeSort<T extends Comparable<T>>
         }
         else
         {
-            int center = (int) ((leftBound + rightBound) / 2);
+            int center = (leftBound + rightBound) / 2;
             this.mergeSort(leftBound, center);
             this.mergeSort(center + 1, rightBound);
             this.merge(leftBound, center, rightBound);

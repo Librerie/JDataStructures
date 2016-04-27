@@ -3,7 +3,6 @@ package it.reexon.jdatastructures.tests.structures;
 import java.util.ArrayList;
 
 import it.reexon.jdatastructures.ParallelRandInt;
-import it.reexon.jdatastructures.exceptions.EmptyArrayException;
 import it.reexon.jdatastructures.exceptions.EmptyHeapException;
 import it.reexon.jdatastructures.structures.MaxHeap;
 import it.reexon.jdatastructures.structures.MinHeap;
@@ -14,7 +13,7 @@ import it.reexon.jdatastructures.structures.Stack;
 @Deprecated
 public class TestStructures
 {
-    public static void main(String[] args) throws EmptyArrayException, EmptyHeapException
+    public static void main(String[] args)
     {
         boolean TEST_QUEUE = false;
         boolean TEST_STACK = false;

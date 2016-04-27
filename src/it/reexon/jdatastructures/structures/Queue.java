@@ -113,7 +113,7 @@ public class Queue<T>
     @SuppressWarnings("unchecked")
     public T[] toArray()
     {
-        T[] arr = ((T[]) this.Queue.toArray((T[]) Array.newInstance(this.Queue.get(0).getClass(), this.Queue.size())));
+        T[] arr = (this.Queue.toArray((T[]) Array.newInstance(this.Queue.get(0).getClass(), this.Queue.size())));
         return arr;
     }
 

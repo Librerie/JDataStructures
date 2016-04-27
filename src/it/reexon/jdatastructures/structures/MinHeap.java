@@ -36,7 +36,7 @@ public class MinHeap<T extends Comparable<T>> extends AbstractHeap<T>
     {
         if (this.heapSize > 0)
         {
-            for (int i = (int) (heapSize / 2); i >= 0; i--)
+            for (int i = heapSize / 2; i >= 0; i--)
             {
                 this.minHeapify(i);
             }

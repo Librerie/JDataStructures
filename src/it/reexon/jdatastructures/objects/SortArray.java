@@ -186,7 +186,7 @@ public class SortArray<T extends Comparable<T>> implements SortInteface<T>
     {
         this.exceptionOutOfBoundThrower(leftBound, rightBound);
         InsertionSort<T> sorting = new InsertionSort<T>(this.arraySort, leftBound, rightBound);
-        this.arraySort = (T[]) sorting.getArraySort();
+        this.arraySort = sorting.getArraySort();
     }
 
     /**
@@ -261,7 +261,7 @@ public class SortArray<T extends Comparable<T>> implements SortInteface<T>
     {
         this.exceptionOutOfBoundThrower(leftBound, rightBound);
         SelectionSort<T> sorting = new SelectionSort<T>(this.arraySort, leftBound, rightBound);
-        this.arraySort = (T[]) sorting.getArraySort();
+        this.arraySort = sorting.getArraySort();
     }
 
     /**
@@ -332,7 +332,7 @@ public class SortArray<T extends Comparable<T>> implements SortInteface<T>
     {
         this.exceptionOutOfBoundThrower(leftBound, rightBound);
         BubbleSort<T> sorting = new BubbleSort<T>(this.arraySort, leftBound, rightBound);
-        this.arraySort = (T[]) sorting.getArraySort();
+        this.arraySort = sorting.getArraySort();
     }
 
     /**
@@ -405,7 +405,7 @@ public class SortArray<T extends Comparable<T>> implements SortInteface<T>
     {
         this.exceptionOutOfBoundThrower(leftBound, rightBound);
         ShellSort<T> sorting = new ShellSort<T>(this.arraySort, leftBound, rightBound);
-        this.arraySort = (T[]) sorting.getArraySort();
+        this.arraySort = sorting.getArraySort();
     }
 
     /**
@@ -474,7 +474,7 @@ public class SortArray<T extends Comparable<T>> implements SortInteface<T>
     {
         this.exceptionOutOfBoundThrower(leftBound, rightBound);
         MergeSort<T> sorting = new MergeSort<T>(this.arraySort, leftBound, rightBound);
-        this.arraySort = (T[]) sorting.getArraySort();
+        this.arraySort = sorting.getArraySort();
     }
 
     /**
@@ -542,7 +542,7 @@ public class SortArray<T extends Comparable<T>> implements SortInteface<T>
     {
         this.exceptionOutOfBoundThrower(leftBound, rightBound);
         MergeHybridSort<T> sorting = new MergeHybridSort<T>(this.arraySort, leftBound, rightBound);
-        this.arraySort = (T[]) sorting.getArraySort();
+        this.arraySort = sorting.getArraySort();
     }
 
     /**
@@ -610,7 +610,7 @@ public class SortArray<T extends Comparable<T>> implements SortInteface<T>
     {
         this.exceptionOutOfBoundThrower(leftBound, rightBound);
         HeapSort<T> sorting = new HeapSort<T>(this.arraySort, leftBound, rightBound);
-        this.arraySort = (T[]) sorting.getArraySort();
+        this.arraySort = sorting.getArraySort();
     }
 
     /**

@@ -64,7 +64,7 @@ public class ParallelRandInt extends SecureRandom implements Runnable
             this.threadNum--;
         }
         // Random Number Per Core
-        this.seqPerThread = (int) (this.seqLength / this.threadNum);
+        this.seqPerThread = this.seqLength / this.threadNum;
         // Initialize Threads Array
         this.t = new Thread[this.threadNum];
         // Create And Start The Threads

@@ -37,7 +37,7 @@ public class MaxHeap<T extends Comparable<T>> extends AbstractHeap<T>
     {
         if (super.heapSize > 0)
         {
-            for (int i = (int) (super.heapSize / 2); i >= 0; i--)
+            for (int i = super.heapSize / 2; i >= 0; i--)
             {
                 this.MaxHeapify(i);
             }

@@ -59,7 +59,7 @@ public class MergeHybridSort<T extends Comparable<T>> extends MergeSort<T>
             }
             else
             {
-                int center = (int) ((leftBound + rightBound) / 2);
+                int center = (leftBound + rightBound) / 2;
                 this.mergeHybridSort(leftBound, center);
                 this.mergeHybridSort(center + 1, rightBound);
                 this.merge(leftBound, center, rightBound);

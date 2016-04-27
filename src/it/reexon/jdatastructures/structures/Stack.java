@@ -111,7 +111,7 @@ public class Stack<T>
     {
         //T[] arr = (T[]) this.Stack.toArray();
         //(T[]) list.toArray( (T[])Array.newInstance (one.getClass(), list.size()) );
-        T[] arr = (T[]) this.stack.toArray((T[]) Array.newInstance(this.stack.get(0).getClass(), this.stack.size()));
+        T[] arr = this.stack.toArray((T[]) Array.newInstance(this.stack.get(0).getClass(), this.stack.size()));
         return arr;
     }
 
